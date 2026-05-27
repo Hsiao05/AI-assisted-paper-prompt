@@ -132,10 +132,10 @@
 
 ## ✨ 第 5.5 轮：润色
 ```
-作为学术论文写作助手，请使用更学术、更科学的语言改写原文较为复杂的部分。语气要中立，避免重复使用词语和短语。不要使用过于专业的词汇，并确保文章易于阅读。润色后修改的部分用【】方括号括出。
+作为学术论文写作助手，请使用更学术、更科学的语言改写原文较为复杂的部分。语气要中立，避免重复使用词语和短语。不要使用过于专业的词汇，并确保文章易于阅读。润色后修改的部分用【】方括号括出。只框出修改的具体的词汇/语句，不要整段整段框出，方便后期检查。
 ```
 ```
-As an academic essay writing assistant, paraphrase the comprehensive part of the paper using more academic and scientific language. Use a neutral tone and avoid repetitions of words and phrases. Don't use too advanced words and make sure it's easy to read. After polishing, use **【】** to mark the polished text.
+As an academic essay writing assistant, paraphrase the comprehensive part of the paper using more academic and scientific language. Use a neutral tone and avoid repetitions of words and phrases. Don't use too advanced words and make sure it's easy to read. After polishing, use **【】** to mark the polished text. Only mark the specific words/phrases that have been modified without highlighting entire paragraphs, to facilitate later review.
 ```
 
 
@@ -189,7 +189,7 @@ As an academic essay writing assistant, paraphrase the comprehensive part of the
 * 请直接输出经过深度润色与重构的最终中/英学术文本。
 * **禁止**输出任何解释性的前言、后语或修改说明（例如“好的，我已经修改完毕”）。
 * 保持所有专有名词、引文格式、文献出处及数据绝对准确不变。
-* 修改过的文本部分用【】方括号括出，方便人工核对检查。
+* 修改过的文本部分用【】方括号括出，方便人工核对检查。只框出修改的具体的词汇/语句，不要整段整段框出，方便后期检查。
 ```
 
 
@@ -207,4 +207,6 @@ As an academic essay writing assistant, paraphrase the comprehensive part of the
 5. **正文(Body)**：中文汉字、全角标点：宋体；外文、半角标点、数字：Times New Roman。小四号字，两端对齐。每段开头要缩进四个字母（两个字符）。
 6. **引用文献(Works Cited)**：正文中用交叉引用，引用部分语句后用像[1]这样的数字角标上标标注。正文引用标注用红色字体方便我自己检查。在参考文献列表中，左对齐，英文文献使用 MLA 格式标注，中文文献用 GB/T 7714-2015 标准格式标注。中文文献条目允许西文在单词中间换行。
 7. **行距**：1.5 倍行距，段落前后各空 0.5 行，大标题、小标题前后空 1 行。
+8. **页眉页脚**：页眉页脚离页面边缘各1.5cm，不要页眉线，页脚处居中标页码，字体为Times New Roman，五号。
+9. **删除标记**：删除所有用于标记用的【】中括号。
 ```
