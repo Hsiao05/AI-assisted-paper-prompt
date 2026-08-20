@@ -1,13 +1,13 @@
 ---
 name: pdf-to-markdown
-description: Convert short or medium-length PDF documents, including scanned PDFs, into high-fidelity Markdown while preserving original text, paragraph logic, heading hierarchy, multi-column reading order, tables, figures, charts, footnotes, and formulas as faithfully as possible.
+description: Convert short or medium-length PDF documents, including scanned PDFs, and other formats of text files, into high-fidelity Markdown while preserving original text, paragraph logic, heading hierarchy, multi-column reading order, tables, figures, charts, footnotes, and formulas as faithfully as possible.
 ---
 
 # PDF to Markdown
 
 ## Purpose
 
-Use this skill when the user asks to convert a PDF, especially a scanned PDF, into Markdown for later reading, analysis, archiving, or use by an AI agent.
+Use this skill when the user asks to convert a PDF, especially a scanned PDF, or other similar forms of text files, into Markdown for later reading, analysis, archiving, or use by an AI agent.
 
 The task is **transcription and structural conversion**, not summarization, editing, rewriting, translation, proofreading, or content improvement.
 
