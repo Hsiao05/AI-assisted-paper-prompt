@@ -1,9 +1,9 @@
 ---
-name: high-fidelity-pdf-to-markdown
+name: pdf-to-markdown
 description: Convert short or medium-length PDF documents, including scanned PDFs, into high-fidelity Markdown while preserving original text, paragraph logic, heading hierarchy, multi-column reading order, tables, figures, charts, footnotes, and formulas as faithfully as possible.
 ---
 
-# High-Fidelity PDF to Markdown
+# PDF to Markdown
 
 ## Purpose
 
