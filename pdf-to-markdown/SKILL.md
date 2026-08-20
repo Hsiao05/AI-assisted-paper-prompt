@@ -207,7 +207,7 @@ The final Markdown does not need to visually reproduce columns. It should preser
 
 ---
 
-## Lists, Quotes, and Footnotes
+## Lists, Quotes, Footnotes, and Endnotes
 
 ### Lists
 
@@ -237,9 +237,27 @@ Use Markdown blockquote syntax only when the source clearly contains an independ
 > Quoted content
 ```
 
-### Footnotes
+### Footnotes and endnotes
 
-If footnote relationships can be reconstructed reliably, Markdown footnote syntax may be used:
+If the source contains footnotes, endnotes, explanatory notes, translator's notes, editorial notes, or other numbered annotations, they must be preserved in the Markdown.
+
+The annotation marker and annotation text must remain correctly paired.
+
+Strict rules:
+
+1. Preserve the annotation number or symbol exactly as it appears in the source.
+2. Do not renumber notes automatically.
+3. Do not merge two different notes.
+4. Do not split one note into several notes.
+5. Do not assign a note to a paragraph, sentence, or chapter unless the source relationship is clear.
+6. Preserve the note text faithfully. Do not summarize, rewrite, correct, translate, or normalize it.
+7. If the source uses non-Arabic note markers, such as `*`, `†`, `①`, Roman numerals, letters, or other symbols, preserve those markers whenever practical.
+8. If the note marker is visible but the corresponding note text cannot be reliably identified, preserve the marker and insert an explicit uncertainty notice rather than inventing the note.
+9. If the note text is visible but its marker relationship cannot be reliably determined, preserve the note text and mark the relationship as uncertain.
+
+When Markdown footnote syntax can preserve the source numbering faithfully, it may be used.
+
+Example:
 
 ```markdown
 正文内容[^1]
@@ -247,7 +265,57 @@ If footnote relationships can be reconstructed reliably, Markdown footnote synta
 [^1]: 脚注内容
 ```
 
-If the relationship cannot be reconstructed confidently, preserve the footnote text in source order instead of inventing a mapping.
+If the original note number is `7`, preserve it:
+
+```markdown
+正文内容[^7]
+
+[^7]: 原文中的第7条注释文本
+```
+
+Do not change it to `[^1]` merely because it is the first note encountered in the current excerpt.
+
+#### Placement of footnote text
+
+For page footnotes or paragraph-level footnotes, the note text may be moved out of the visual page footer and placed at a logical Markdown boundary, provided that:
+
+- the original note marker remains attached to the correct source text;
+- the original note number remains unchanged;
+- the note text remains unchanged;
+- the relationship between marker and note remains unambiguous.
+
+Preferred placement order:
+
+1. At the end of the relevant paragraph group, when the note clearly belongs to a local passage;
+2. At the end of the relevant subsection or section, when several notes belong to that section;
+3. At the end of the chapter, when this best reflects the source structure.
+
+Do not scatter footnote text arbitrarily if doing so would make note relationships harder to follow.
+
+#### Placement of endnote text
+
+If the source uses endnotes rather than page footnotes, preserve that logic.
+
+Depending on the original document, place endnote text:
+
+- at the end of the relevant chapter, if the source uses chapter endnotes; or
+- at the end of the full document, if the source uses document-level endnotes.
+
+Do not convert endnotes into page-style footnotes unless necessary for faithful Markdown representation.
+
+#### Source structure takes precedence
+
+The placement rules above are flexible. The original document's annotation system takes precedence.
+
+Choose the Markdown placement that best preserves:
+
+- original numbering;
+- note-to-text correspondence;
+- chapter or document scope;
+- reading order;
+- source meaning.
+
+The goal is not to reproduce the exact visual position of a footnote at the bottom of a PDF page, but to preserve the annotation system faithfully and make the correspondence clear in Markdown.
 
 ---
 
@@ -509,7 +577,7 @@ Before finalizing, silently verify:
 2. No text was rewritten, polished, corrected, or translated.
 3. Paragraph boundaries were not arbitrarily changed.
 4. Cross-page paragraphs were restored where clearly appropriate.
-5. Footnotes were not mistaken for footers.
+5. Footnotes, endnotes, and other annotations were not mistaken for footers, and their original markers/numbers remain correctly paired with the corresponding note text.
 6. Standalone page numbers and repeating headers/footers were removed.
 7. Multi-column reading order is correct.
 8. Heading levels are consistent across the document.
